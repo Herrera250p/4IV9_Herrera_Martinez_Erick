@@ -1,0 +1,27 @@
+public class Gato extends Animal{
+    int num_vidas;
+    public Gato(){
+
+    }
+    //yo quiero acceder a los atributos de la clase padre 
+
+    public Gato(String nombre, String raza, String tipo_alimento, int edad, int num_vidas){
+        //como puedo obtenerlo con la pablara reservada  super
+
+        super(nombre, raza, tipo_alimento, edad);
+        this.num_vidas = num_vidas;
+
+    }
+
+    public int getnum_vidas(){
+        return num_vidas;
+    }
+
+    public void setnum_vidas(int num_vidas){
+        this.num_vidas = num_vidas;
+    }
+
+    public void mostrarGato(){
+        System.out.println("El nombre del michi es: " + getNobre() + "\n" + " Su raza es: " + getraza() + "\n" + " Su comida es: " + gettipo_alimento() + "\n" + " Su edad es: " + getedad() + "\n" + " Su num de vidas es: " + num_vidas + "\n");
+    }
+}
