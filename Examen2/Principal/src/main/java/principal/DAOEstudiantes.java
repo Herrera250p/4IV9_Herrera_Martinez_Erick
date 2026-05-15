@@ -137,4 +137,17 @@ public class DAOEstudiantes {
 
         JOptionPane.showMessageDialog(null, "No  se encontro");
     }
+    
+    public DAOEstudiantes(){
+    
+        obj = Achivo.cargarEstudiante();
+        
+        for(Estudiante e : obj){
+            
+            if(e != null){
+            
+                x++;
+            }
+        }   
+    }   
 }

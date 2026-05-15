@@ -137,4 +137,17 @@ public class Profesores {
 
         JOptionPane.showMessageDialog(null, "No  se encontro");
     }
+    
+        public Profesores(){
+    
+        obj = Achivo.cargarProfesor();
+        
+        for(Profesor e : obj){
+            
+            if(e != null){
+            
+                x++;
+            }
+        }   
+    }
 }
